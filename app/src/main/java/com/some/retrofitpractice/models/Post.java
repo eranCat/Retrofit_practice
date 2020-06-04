@@ -1,9 +1,14 @@
 package com.some.retrofitpractice.models;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity(tableName = "posts")
 public class Post {
 
-    private Integer userId;
+    @PrimaryKey
     private Integer id;
+    private Integer userId;
     private String title;
     private String body;
 

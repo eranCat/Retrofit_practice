@@ -1,8 +1,13 @@
 package com.some.retrofitpractice.models;
 
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity(tableName = "users")
 public class User {
 
+    @PrimaryKey
     private Integer id;
     private String name;
     private String username;
